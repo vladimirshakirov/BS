@@ -11,3 +11,23 @@
  *= require_self
  *= require_tree .
  */
+
+body {
+    background: url('/assets/body-bg.png');
+    margin:0;
+    padding:0;
+    color:#ffffff;
+    line-height:21px;
+    font-size:14px;
+    cursor:default;
+    overflow: hidden;
+    border:0px solid #ffffff;
+}
+
+#flash-point{
+    position:absolute;
+    top:0;
+    z-index:1;
+    left:50%;
+    margin-left:-577px;
+}
