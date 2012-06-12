@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru-RU">
 <head>
   <title>BesimpleApp</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
@@ -7,17 +7,71 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<img id="flash-point" src="assets/flash.png" alt=""  />
+	<%= image_tag("flash.png", :class => "flash-point")%>
 
-<div id = "wrapper"> 
-	<div id = "header">
-		<%= image_tag("Logo_red.png")%>
-	</div>
+<div class = "wrapper"> 
 
-</div>
-	
+	<div class = "main">
+		<div class = "header">
+			<div class = "logo"> <!-- Logo -->
+				<h1> beSimple </h1>
+				<%= image_tag("Logo_red.png", :class => "logo_icon")%>
+			</div>
+
+			<ul class = "nav">
+					<li>
+						 <%= link_to('О нас') %>
+					</li>
+					<li>
+						 <%= link_to('Подписка') %>
+					</li>
+					<li>
+						 <%= link_to('Блог') %>
+					</li>
+					<li>
+						 <%= link_to('Уроки') %>
+					</li>
+					<li>
+						 <%= link_to('Войти') %>
+					</li>
+			</ul>
+		</div> <!-- Конец блока Header> -->
 
 <%= yield %>
+
+	</div> <!-- Конец блока Main> -->
+	<div class = "footer">
+
+		<hr align="center" width="870" size="1" color="#929498" />
+
+		<div class = "social">
+			<%= image_tag("Facebook.png", :class => "")%>
+					<%= image_tag("Twitter.png", :class => "")%>
+		</div>
+
+		<div class = "contacts">
+			<div class = "call_write">
+				<h3> Звоните: 8-800-800-8080 </h3>
+			</div>
+			<div class = "call_write">
+				<h3> Пишите: info@besimple.ru </h3>
+			</div>
+			
+		</div>
+
+		<div class = "bottom_logo">
+			<%= image_tag("Logo_red.png", :class => "logo_small")%>
+		</div>
+
+
+	</div> <!-- Конец блока Footer> -->
+	
+</div> <!-- Конец блока Wrapper> -->
+	
+
+
+
+
 
 </body>
 </html>

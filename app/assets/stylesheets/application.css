@@ -12,22 +12,193 @@
  *= require_tree .
  */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*************
+BASE
+*************/
+
+html {
+	height: 100%;
+}
+
 body {
     background: url('/assets/body-bg.png');
     margin:0;
     padding:0;
-    color:#ffffff;
+	font-family: Verdana, arial, serif;
+    color:#222;
     line-height:21px;
     font-size:14px;
     cursor:default;
-    overflow: hidden;
     border:0px solid #ffffff;
 }
 
-#flash-point{
+
+.flash-point{
     position:absolute;
     top:0;
-    z-index:1;
+    z-index:-1;
     left:50%;
     margin-left:-577px;
+}
+
+
+img {
+	max-width: 100%;
+}
+
+.wrapper{
+	margin: 0 auto;
+	width: 950px;
+}
+
+.main {
+
+}
+
+p {
+	line-height: 1.2em;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #474747;	
+}
+
+.header {
+	width: 870px;
+	margin: auto 40px 30px 40px;
+	float: left;
+}
+
+.logo {
+  float: left;
+  background-position:0 0;
+  background-repeat:no-repeat no-repeat;
+  cursor:pointer;
+  margin: 10px auto 0 0;
+//  z-index:2;
+}
+
+.logo h1 {
+	text-indent: -20000px;
+}
+
+.logo_icon {
+	width: 230px;
+}
+
+
+/*************
+Navigation
+*************/
+
+.nav {
+	list-style: none;
+	padding: 0;
+	float: right;
+  	margin: 50px 15px 0 40px;
+}
+
+.nav li {
+	float: left;
+	margin-left: 40px;
+	font-size: 1.2em;
+//	font-weight: bold;
+}
+
+.nav li a {
+	text-decoration: none;
+}
+
+.nav a:hover {
+	text-decoration: none;
+	color: #848484;	
+}
+
+a:visited {
+	color:#000;
+}
+
+.footer {
+	float: left;
+	margin: auto 40px;
+}
+
+.social {
+	float: left;
+	width: 50px;
+}
+
+.bottom_logo {
+	float: right;
+}
+
+.logo_small {
+	width: 150px;
+	margin-top: 20px;
+}
+
+.contacts {
+	float:left;
+	width: 270px;
+	margin-left: 270px;
+}
+
+.contacts h3{
+    font-size:1.3em;
+	line-height: 1.4em;
+}
+
+.call_write {
+	margin-top: 10px;
 }

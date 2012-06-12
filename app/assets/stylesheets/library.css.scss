@@ -2,7 +2,89 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-h1{
-left:50%;
-	
+.content {
+	width: 870px;
+	margin: auto 40px;
+	float: left;
 }
+
+.block_of_text {
+	float: left;
+	margin-right: 40px;
+	width: 390px;
+}
+
+.block_of_text h1{
+    font-size:1.6em;
+	line-height: 1.4em;
+	margin-bottom: 30px;
+	margin-top: 10px;
+}
+
+.arrow {
+//	float: right;
+	width: 200px;
+	margin: 0 0 30px 190px;
+}
+
+.block_of_text h3{
+    font-size:1.3em;
+	line-height: 1.4em;
+}
+
+.ipad {
+	width: 440px;
+	height: 325px;
+	
+	background: url('/assets/ipad.png') top center no-repeat;
+//	background-repeat:no-repeat;
+	float: left;
+	-webkit-background-size: 100% auto;
+}
+
+.video_container {
+	width: 370px;
+	margin: 11px 40px auto 40px;
+}
+
+.dots {
+	background-image: url('/assets/cta-dots.svg');
+	background-position:0 100%;
+  	background-repeat:repeat no-repeat;
+	height:5px;
+	width: 870px;
+	margin-top: 385px;
+	positiaon: absolute;
+}
+
+.call_to_action {
+	float: left;  
+	width: 870px;
+
+}
+
+.button {
+	margin: 30px 0 0 260px;  
+	cursor:pointer;
+}
+
+.features {
+	float: left;
+	margin: 40px auto;
+}
+
+.first_icon {
+	width: 160px;
+	float: left;
+	margin-left: 110px;
+}
+
+.icon {
+	margin-left: 20px;
+}
+
+.icon_text p {
+	margin-bottom: 13px;
+	text-align: center;
+}
+
